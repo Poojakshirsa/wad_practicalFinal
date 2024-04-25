@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BE EVENTFUL !</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">BE EVENTFUL !</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          toggledata-bs-="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">EVENTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">QUESTIONS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <br />
+            <h1>WELCOME TO <span class="text-warning"> BE EVENTFUL </span></h1>
+            <p class="lead my-4">
+              Be eventful is one of India’s COMMUNICATION & PROFESSIONAL EVENTS
+              platform, integrating strategy, creativity and technology to
+              provide unique experiences.
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              REGISTRATION AVAILABLE
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="https://www.beeventful.uk/wp-content/uploads/2019/04/Be-eventful_transparent-e1556218774551.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://media-exp1.licdn.com/dms/image/C4D1BAQFAC3o2eHS_vA/company-background_10000/0/1565182814457?e=2147483647&v=beta&t=sCkDT2L5namPFKkbA-3Heuv_MiVew4iK7JfnBingAmo" style="width:100% ; height:500px">
+  <img class="mySlides" src="https://www.gl-events.com/sites/default/files/styles/hero_background_image/public/2019-03/exhibitions-gl-events.jpg?itok=NHZzSPwq" style="width:100% ; height:500px">
+  <img class="mySlides" src="https://hire4event.com/blogs/wp-content/uploads/2020/01/Conference.jpg" style="width:100% ;height:500px">
+  <img class="mySlides" src="https://www.allconferencealert.com/blog/wp-content/uploads/2021/12/Conference-Seminars.jpg" style="width:100% ; height:500px">
+  <img class="mySlides" src="https://static.library.ucla.edu/craftassetsprod/images/_fullscreen/Workshop-Example.jpg" style="width:100% ; height:500px">
+
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+
+
+    <!-- Newsletter -->
+    <section class="bg-danger text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up for further details</h3>
+
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-4">CONFERENCE EVENTS</h3>
+                <p class="card-text">
+                  Enjoy robust features, end-to-end project support and a global
+                  reach for online events with the market leader with us.
+                </p>
+                <a class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-4">EXHIBITIONS</h3>
+                <p class="card-text">
+                  Create immersive experiences for your in-person attendees with our event app platform.
+                </p>
+                <a class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-4">PRODUCT LAUNCH</h3>
+                <p class="card-text">
+                  A business's planned and coordinated effort to debut a new product to the market and make that product generally available for purchase.
+                </p>
+                <a class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-arrow-up-circle"></i>
+                </div>
+                <h3 class="card-title mb-4">VISITS</h3>
+                <p class="card-text">
+                  To go to see or stay at a place for a particular purpose (such as business or sightseeing) also to go or come officially to inspect or oversee.
+                </p>
+                <a class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-4">WORKSHOPS</h3>
+                <p class="card-text">
+                  Expertly manage your physical events and elevate attendee
+                  experience with our in-person workshop bsed events.
+                </p>
+                <a class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="https://www.typesofall.com/wp-content/uploads/3/Types-of-Events.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md p-5">
+            <h2>WHY BE EVENTFUL?</h2>
+            <p class="lead">
+              Why be eventful Over Others? Visually Stunning, Memorably Epic!
+              Stop boring audiences with events that look the same. We offer 3D
+              Visual Designs & Animations that make you stand out & make your
+              sponsors dazzle.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Big or Small, we handle them all!</h2>
+            <p class="lead">
+              Whether you’re invited a small pool of attendees for a private
+              training or opening up doors to thousands across the world, we’ve
+              got you covered.
+            </p>
+            <p>
+              Online events that adapt to your goal Hosting a tradeshow? Turn on
+              our shopping cart feature. Conducting a job fair? Let’s add in a
+              job board. We’re not a one-size-fits-all sweat shop.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+          <div class="col-md mt-10">
+            <img
+              src="https://i.ytimg.com/vi/9Gjs83Wz19M/maxresdefault.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Where exactly are you located?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Address: Nashik, Maharashtra,India
+                422003 <br />
+                Areas served: Nashik and nearby areas <br />
+                Hours: Open 24 hours
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                How much does it cost to attend?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Budget can be totally flexible and dependent on the sevice
+                rendered. hence remunaration for same is applied.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                What do I need to Know?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Be eventful, with a depth of expertise in experiential
+                marketing, boasts of having in its client portfolio more than 50
+                MNCs and corporate houses. Be eventful’s in-house brands include
+                GGSP ATRANG MELA, E-FEST. Be eventful has successfully
+                conceptualized, organized and executed events such as the
+                Opening and Closing ceremonies,wedding's,birthday's and
+                anniversary's,product launch,seminar's, Indian Independence Day
+                Celebrations
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How Do I sign up?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                You just need to fill up the registration and provide necessary
+                details and given respectively.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                What kind of events sevices are provided?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                All sort of events services are provided by be eventful. May it
+                be wedding,birthdays,seminar,etc. virtual,in person as well as
+                hybrid events are carried out!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our expertise</h2>
+        <p class="lead text-center text-white mb-5">
+          Our Company have 5+ years working experience in the industry!
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                
+                <h3 class="card-title mb-3">Pooja Kshirsagar</h3>
+                <p class="card-text">
+                  Highlighting company's years of experience can instill confidence in potential clients, 
+                  demonstrating that  delivering successful events and providing excellent service.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                
+                <h3 class="card-title mb-3">Vaishnavi Bhandarkar</h3>
+                <p class="card-text">
+                  Highlighting skills in conceptualizing and bringing to life unique visual elements, decor, 
+                 materials,and interactive experiences that align with clients' visions and goals.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+
+                <h3 class="card-title mb-3">Sakshi Ghotekar</h3>
+                <p class="card-text">
+                  Highlighting personalized approach to understanding clients' needs, providing tailored solutions, and delivering 
+                  exceptional experiences  and foster long-term partnerships.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                
+                <h3 class="card-title mb-3">Rutuja Deshmukh</h3>
+                <p class="card-text">
+                  Highlight your proficiency in utilizing cutting-edge technology and equipment to create immersive and 
+                  engaging event environments while ensuring flawless technical execution.
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> 
+                Nashik, Maharashtra , India
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Phone:</span> 56311166785
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> happy@gmail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Company Email:</span>
+                beventful@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2024 Be Eventful</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">REGISTRATION</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form action="dbcos.php" method="post">
+              <div class="mb-3">
+                <label for="fname" class="col-form-label"> First Name: </label>
+                <input type="text"  class="form-control" id="fname" name="fname" />
+              </div>
+              <div class="mb-3">
+                <label for="lname" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="lname" name="lname" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+  
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+  <script>
+  mapboxgl.accessToken =
+    "pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw";
+  var map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/streets-v11",
+    center: [-71.060982, 42.35725],
+    zoom: 18,
+  });
+</script>-->

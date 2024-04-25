@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#btn-4").click(function(){
+            const var1=localStorage.getItem("storage");
+            const myobj=JSON.parse(var1);
+            $("#name").val(myobj.name);
+            $("#email").val(myobj.name);
+            $("#number").val(myobj.name);
+            
+        })
+  })
+    </script>
+</head>
+    <button id="btn-4">display</button>
+    <div id="div1" method="post">
+        <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+        
+         <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" placeholder="Enter 10-digit number" required>
+
+        <button id="btn-3">submit</button>
+    </div>
+</body>
+</html>

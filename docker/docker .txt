@@ -1,0 +1,19 @@
+^Cpl-14@pl14-OptiPlex-3020:~docker pull ubuntu
+Using default tag: latest
+latest: Pulling from library/ubuntu
+Digest: sha256:1b8d8ff4777f36f19bfe73ee4df61e3a0b789caeff29caa019539ec7c9a57f95
+Status: Image is up to date for ubuntu:latest
+docker.io/library/ubuntu:latest
+
+What's Next?
+  1. Sign in to your Docker account → docker login
+  2. View a summary of image vulnerabilities and recommendations → docker scout quickview ubuntu
+pl-14@pl14-OptiPlex-3020:~$ docker run -it ubuntu
+root@b75746ba9109:/# ls
+bin   dev  home  lib32  libx32  mnt  proc  run   srv  tmp  var
+boot  etc  lib   lib64  media   opt  root  sbin  sys  usr
+root@b75746ba9109:/# mkdir kbtcoe
+root@b75746ba9109:/# ls
+bin   dev  home    lib    lib64   media  opt   root  sbin  sys  usr
+boot  etc  kbtcoe  lib32  libx32  mnt    proc  run   srv   tmp  var
+root@b75746ba9109:/#

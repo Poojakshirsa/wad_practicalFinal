@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#btn-2").click(function(){
+            const obj={name:$("#name").val(),email:$("#email").val(),number:$("#number").val()}
+            const myjson=JSON.stringify(obj);
+            localStorage.setItem("storage",myjson);
+            $("#div1").load("http://127.0.0.1:5500/ajax2.html");
+
+        })
+  })
+    </script>
+</head>
+<body>
+    <h2>Student Information</h2>
+    <div id="div1" method="post">
+        <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+        
+         <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" placeholder="Enter 10-digit number" required>
+
+        <button id="btn-2">submit</button>
+    </div>
+</body>
+</html>
